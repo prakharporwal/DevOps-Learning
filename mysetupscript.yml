@@ -16,4 +16,5 @@
        repo: 'https://github.com/zsh-users/zsh-autosuggestions.git'
        dest: '~/.oh-my-zsh/plugins/zsh-autosuggestions'
     
-    
+    - name: update zshrc file
+      shell: sed -i 's/(git/(git zsh-autosuggestions' ~/.zshrc
