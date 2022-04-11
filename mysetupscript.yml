@@ -4,12 +4,10 @@
   tasks:
     - name: Install zsh name
       apt: name=zsh
+    
     - name: change shell to zsh
       shell: chsh -s `which zsh`
-    - name: Install ohmyzsh 
-      shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-    - name: Install zsh plugin for autosuggestions
-      ansible.builtin.git :
-       repo: "https://github.com/zsh-users/zsh-autosuggestions.git"
-       dest: "~/.oh-my-zsh/plugins/zsh-autosuggestions"
-'
+    
+    
+    
+    
